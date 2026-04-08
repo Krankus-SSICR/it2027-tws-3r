@@ -1,0 +1,268 @@
+
+* { 
+    margin:0;
+     padding:0;
+      box-sizing: border-box;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+body {
+     background-color: #e6f2ff;
+      color: #333; line-height: 1.6;
+     }
+
+
+header {
+     padding: 15px 0;
+      text-align: center; 
+      background-color: #a3d9a5; 
+    }
+nav ul { 
+    display: flex;
+     justify-content: center;
+      list-style: none;
+       gap: 20px;
+        flex-wrap: wrap;
+     }
+nav a {
+     text-decoration: none;
+      font-weight: bold;
+       padding: 8px 12px;
+        border-radius: 5px;
+         transition: 0.3s;
+          color: #333;
+         }
+nav a:hover {
+     background-color: #ffcc80; 
+    }
+nav a.active {
+     background-color: #ff9933;
+      color: #fff; 
+    }
+
+section h2 {
+     text-align: center;
+      font-size: 2rem;
+       margin: 20px 0;
+        color: #2a6f3f;
+     }
+
+
+.postavy { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.postavy .film { 
+    width: 240px; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 15px; 
+    transition: transform 0.3s; 
+    color: #333; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.postavy .film:hover { transform: translateY(-5px); }
+
+
+.postavy .foto {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.postavy .foto img { 
+    width: 100%; 
+    aspect-ratio: 1 / 1;    
+    object-fit: cover;      
+    border-radius: 10px; 
+    display: block;
+}
+
+.postavy .rozdeleni {
+    width: 60px;
+    height: 4px;
+    background-color: crimson;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+
+.postavy .info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.postavy .info p { 
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center; 
+    margin-bottom: 0;
+}
+
+.postavy .film {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+#konoha { 
+    background-image: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); 
+}
+.konoha .rozdeleni { 
+    background-color: #2e7d32;
+ } 
+
+.konoha .film {
+     border-top: 5px solid #2e7d32;
+     }
+
+
+#suna { 
+    background-image: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); 
+}
+.suna .rozdeleni {
+     background-color: #ef6c00;
+     } 
+
+.suna .film { 
+    border-top: 5px solid #ef6c00;
+ }
+
+
+#kiri { 
+    background-image: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); 
+}
+
+.kiri .rozdeleni {
+     background-color: #1565c0; 
+    } 
+.kiri .film {
+     border-top: 5px solid #1565c0; 
+    }
+
+#iwa { 
+    background-image: linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%); 
+}
+
+.iwa .rozdeleni { 
+    background-color: #4e342e; 
+} 
+.iwa .film { 
+    border-top: 5px solid #4e342e; 
+}
+
+
+#kumo { 
+    background-image: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); 
+}
+
+.kumo .rozdeleni {
+     background-color: #7b1fa2; 
+} 
+
+.kumo .film {
+     border-top: 5px solid #7b1fa2; 
+    }
+
+
+.vesnice { 
+    margin: 40px auto;
+     max-width: 1100px; 
+}
+.vesnice-pole {
+     display: flex; gap: 25px;
+      padding: 25px; border-radius: 15px; 
+    }
+
+.vesnice-pole img { 
+    width: 40%;
+     border-radius: 15px; object-fit: cover;
+     }
+
+.vesnice-pole div {
+     width: 60%; 
+    }
+
+.vesnice-pole h2 {
+     margin-bottom: 15px;
+      text-align: left; 
+    }
+
+.vesnice-pole p { 
+    font-size: 1.1rem; text-align: left;
+     margin-bottom: 0;
+     }
+
+
+.konoha .vesnice-pole { 
+    background-color: #d9f0d9;
+}
+.konoha .film { 
+    border-bottom: 5px solid #2a6f3f;
+} 
+
+.galerie {
+     display: flex;
+      flex-wrap: wrap;
+       justify-content: center;
+        gap: 15px;
+         margin-bottom: 40px;
+}
+
+.galerie img {
+     width: 250px;
+      border-radius: 10px;
+       transition: transform 0.3s;
+ }
+
+.galerie img:hover {
+     transform: scale(1.05);
+     }
+
+footer {
+    background-color: #a3d9a5;
+    text-align: center;
+    padding: 15px 0;
+    color: #333;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width:900px){
+    .vesnice-pole { 
+        flex-direction: column;
+     }
+    .vesnice-pole img, .vesnice-pole div {
+         width: 100%;
+         }
+    .postavy .film {
+         width: 45%;
+         } 
+}
+
+@media(max-width:450px) { 
+    .postavy .film { 
+        width: 90%; 
+    } 
+}

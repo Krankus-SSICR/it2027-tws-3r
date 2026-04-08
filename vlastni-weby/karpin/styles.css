@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box; /*nastavi max sirku do ktere vsechno vejde*/
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  line-height: 1.6;
+  background-color: whitesmoke;
+  color: #222;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+   color: #FF4B3E;
+}
+
+header {
+  background-color: #4DA3FF;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+nav a {
+  color: #FAFAFA;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #4DA3FF;
+}
+
+section p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.fotogalerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fotogalerie img {
+  width: 30%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fotogalerie img:hover {
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #4DA3FF;
+  color: #FAFAFA;
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+  margin-top: auto;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 900px) {
+  .fotogalerie img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .fotogalerie img {
+    width: 100%;
+  }
+
+
+}

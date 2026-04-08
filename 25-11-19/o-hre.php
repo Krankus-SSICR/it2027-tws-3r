@@ -1,0 +1,4 @@
+    <section id="o-hre">
+        <h2>O hře</h2>
+        <p>Hra Prehistorik 2 je klasická plošinovka z roku 1993, kterou vyvinula francouzská společnost Titus Interactive. Navazuje na první díl série a opět nás zavádí do doby kamenné, kde hráč ovládá pračlověka snažícího se přežít v drsném světě plném nebezpečných zvířat a překážek. Cílem hry je sbírat potravu, porážet nepřátele a postupovat přes různorodé úrovně, které jsou graficky výrazně propracovanější než v předchozím díle. Prehistorik 2 se vyznačuje humorným pojetím – pračlověk používá obří kyj, skáče po platformách a bojuje s dinosaury i dalšími bizarními tvory. Hra byla oblíbená díky své barevné grafice, chytlavé hudbě a jednoduchému, ale zábavnému hernímu principu. Dodnes je považována za jednu z ikonických her počítačové éry 90. let a často se objevuje v retro herních kolekcích.</p>
+    </section>

@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+h2{
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    border-left: 8px rgb(170, 36, 63) solid;
+    padding: 0.5em 0 0.5em 1em;
+}
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Varela Round", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+
+  a {
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+  }
+
+  &:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+  }
+
+  &:hover a {
+    color: #d94f5c;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+header{
+    background: #555;
+    padding: 2em;
+
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin-right: 10%;
+    gap: 6em;
+}
+nav a{
+    color: #bbb;
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    color: white; 
+     white-space: nowrap;
+    transition-property: background-color, color; 
+    transition-duration: 2s; 
+    transition-timing-function: ease;
+    
+}
+
+footer {
+    background: #303030;
+    color: #eee;
+    text-align: center;
+    margin-top: auto;
+}
+
+.aktivni {
+    color: aquamarine !important;
+}
+
+section {
+    margin:2em 15%;
+    border-bottom: rgb(219, 191, 191) solid  5px;
+}
+
+
+
+.foto {
+    flex-basis: 20%;
+}
+.foto img {
+    width: 100%;
+}
+.rozdeleni {
+    width: 5px;
+    height: 6em;
+    background: rgb(206, 223, 55);
+}
+.film {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin: 2em 0;
+}
+.film p {
+    width: 60%;
+}
+
+h3 {
+    margin-bottom: -1em;
+    margin-left: 1em;
+}
+img {
+  --s: 250px;   
+  --b: 8px;     
+  --g: 14px;    
+  --c: #4ECDC4; 
+  
+  cursor: pointer;
+  transition: .3s;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+img + img {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 426px)
+    {
+        nav ul{
+            flex-direction: column;
+        }
+        section {
+            margin: 1em 5%; 
+        }
+        .film {
+            flex-direction: column;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 1em;
+        }
+        h3 {
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+        .film p {
+            width: 100%;
+        }
+        
+        .rozdeleni {
+            width: 100%;
+            height: 5px;     
+        }
+    }

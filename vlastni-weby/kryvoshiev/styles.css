@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box; /*nastavi max sirku do ktere vsechno vejde*/
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  line-height: 1.6;
+  background-color: whitesmoke;
+  color: #222;
+}
+
+/* ===== ODKAZY ===== */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+   color: #ff6b6b;
+}
+
+/* ===== HLAVIČKA & NAV ===== */
+header {
+  background-color: #1f2933;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* ===== SEKCE ===== */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #1f2933;
+}
+
+section p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ===== OBRÁZKY ===== */
+section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* ===== FOTOGALERIE ===== */
+.fotogalerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.fotogalerie img {
+  width: 30%;
+  height: 250px;
+  object-fit: cover; /* kropne se aby fitlo v normalni rezoluci na obrazek*/
+  border-radius: 8px;
+}
+
+.fotogalerie img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1f2933;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+  margin-top: auto;
+}
+/* -burger- */
+.burger {
+  width: 50px;
+  display: none;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .fotogalerie img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .fotogalerie img {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+  nav li {
+    display: none;
+  }
+}

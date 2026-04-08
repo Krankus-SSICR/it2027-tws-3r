@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background:
+        linear-gradient(rgba(0, 20, 0, 0.85), rgba(0, 20, 0, 0.85)),
+        url("img/terminal-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #33ff66;
+}
+
+
+header{
+    background: rgba(0, 30, 0, 0.9);
+    padding: 2em;
+    border-bottom: 2px solid #33ff66;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin-right: 10%;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav a{
+    color: #33ff66;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 0.8em;
+    border: 1px solid transparent;
+}
+
+nav a:hover{
+    border: 1px solid #33ff66;
+    background: rgba(51,255,102,0.1);
+}
+
+.aktivni{
+    background: #33ff66;
+    color: #002200 !important;
+}
+
+.brand-title{
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+
+section{
+    margin: 2em 15%;
+    background: rgba(0, 20, 0, 0.8);
+    padding: 2em;
+    border: 1px solid #33ff66;
+    box-shadow: 0 0 15px rgba(51,255,102,0.3);
+}
+
+h2{
+    font-size: 22px;
+    border-left: 5px solid #33ff66;
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+h3{
+    color: #66ff99;
+}
+
+
+.film{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.foto{
+    width: 20%;
+    border: 2px solid #33ff66;
+}
+
+.foto img{
+    width: 100%;
+    display: block;
+}
+
+.rozdeleni{
+    width: 4px;
+    background: #33ff66;
+}
+
+
+footer{
+    background: rgba(0,30,0,0.9);
+    color: #33ff66;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px solid #33ff66;
+}
+
+
+ ul li {
+    font-size: 20px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 12px 0 28px 0;
+}
+
+.grid-3 figure{
+    margin: 0;
+    border: 1px solid rgba(51,255,102,0.6);
+    padding: 10px;
+    background: rgba(0, 20, 0, 0.55);
+}
+
+.grid-3 img{
+    width: 100%;
+    display: block;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #33ff66;
+    
+}
+
+.grid-3 figcaption{
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px){
+    .grid-3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 426px){
+    nav ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        margin: 1em 5%;
+        padding: 1.2em;
+    }
+
+    .film{
+        flex-direction: column;
+    }
+
+    .foto{
+        width: 80%;
+    }
+
+    .rozdeleni{
+        width: 100%;
+        height: 3px;
+        background: #33ff66;
+    }
+
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+}

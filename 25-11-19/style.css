@@ -1,0 +1,54 @@
+body {
+    background: lightgreen;
+    margin: 0;
+    font-family: Verdana;
+}
+.logo {
+    width: 20%;
+    margin: 0 auto 2em auto;
+}
+.logo img {
+    width: 100%;
+}
+nav {
+    background: darkslategray;
+    padding: 2em 15%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 3em;
+}
+nav a {
+    color: antiquewhite;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    opacity: 0.5;
+}
+section {
+    padding: 2em 10%;    
+}
+#o-hre {
+    background: lightgoldenrodyellow;
+    color: #666;
+}
+#fotogalerie {
+    background: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+.foto {
+    width: 30%;
+}
+.foto img {
+    width: 100%;
+}
+.aktivni {
+    opacity: 0.5;
+}

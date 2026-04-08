@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+nav {
+    background: aquamarine;
+    padding: 2em 15%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4em;
+    justify-content: end;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+    margin: 1em auto;
+}
+.seda {
+    background: lightgray;
+    color: darkorange;
+    margin: 100px;
+}
+.modra {
+    background: navy;
+    color: aliceblue;
+    margin: 100px;
+}
+.zelena {
+    background: mediumseagreen;
+    color: red;
+    margin: 100px;
+}

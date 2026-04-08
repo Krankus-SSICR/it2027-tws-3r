@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    background: #eee;
+}
+header{
+    background: #AA151B;
+    padding: 2em;
+
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin-right: 10%;
+    gap: 2em;
+}
+nav a{
+    color: #bbb;
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #F1BF00;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+    padding: 2em;
+}
+
+.aktivni {
+    color: aquamarine !important;
+}
+
+section {
+    margin:1em 15%;
+}
+
+h2 {
+    font-size: x-large;
+    padding: 0.5em 0 0.5em 0em;
+}
+
+.foto {
+    flex-basis: 20%;
+}
+.foto img {
+    width: 450px;
+    padding-top: 20px;
+}
+
+.film {
+    display: flex;
+    gap: 3em;
+    margin: 2em 0;
+    align-items: center;
+}
+.film p{
+    width: 60%;
+}
+
+h3 {
+    margin-left: 1em;
+}
+.obsah{
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+p{
+    font-size: 17px;
+}
+.galerie{
+    display: inline-block;
+    margin: 0.5em;
+}
+.galerie img{
+    width: 450px;
+    height: 280px;
+}
+.domu{
+    display: flex;
+    gap: 1em;
+}
+.domu p{
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.obsah:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.galerie:hover{
+    transform: scale(1.08);
+    transition: transform 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        margin: 1em 5%;
+    }
+    .obsah {
+        flex-direction: column;
+        text-align: left;
+    }
+    .foto {
+        flex-basis: auto;
+    }
+    .galerie {
+        display: block;
+        margin: 0.5em auto;
+    }
+    .galerie img {
+        width: 100%;
+        height: auto;
+    }
+    .film {
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 10px;
+    }
+    .film p {
+        width: 100%;
+    }
+    h3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    .rozdeleni {
+        width: 100%;
+        height: 5px;
+        background-color: rgb(4, 155, 155);
+    }
+    .domu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 426px)
+    {
+        nav ul{
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            margin: 1em 5%;
+        }
+        .film{
+            flex-direction: column;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 10px;
+
+        }
+
+        .film p{
+            width: 100%;
+        }
+        h3{
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+        .rozdeleni{
+            width: 100%;
+            height: 5px;
+            background-color: rgb(4, 155, 155);
+        }
+        .foto img {
+            width: 100%;
+            height: auto;
+        }
+        .domu {
+            flex-direction: column;
+        }
+
+    }

@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma;
+    background-color: #0b1016;
+    color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img,
+.karta,
+.galerie figure,
+.tvor-radek,
+.tvor-foto img {
+    border-radius: 0 !important;
+}
+
+header {
+    background: linear-gradient(135deg, #1b2838, #0f2027);
+    padding: 1.5em 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #7fffd4;
+}
+
+.logo p {
+    margin: 0.2em 0 0;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav a {
+    color: #bbb;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    border-color: #7fffd4;
+}
+
+.aktivni {
+    color: #7fffd4;
+    border-color: #7fffd4;
+}
+
+
+section {
+    padding: 2em 10%;
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-left: 6px solid #7fffd4;
+    padding: 0.4em 0 0.4em 0.8em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.karty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.karta {
+    background-color: #151b24;
+    padding: 1em;
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.karta h3 {
+    margin-top: 0;
+    color: #7fffd4;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8em;
+}
+
+.galerie figure {
+    margin: 0;
+    background-color: #151b24;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.galerie img {
+    width: 100%;
+    display: block;
+}
+
+.galerie figcaption {
+    padding: 0.4em 0.6em;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.tvor-radek {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+    background-color: #151b24;
+    padding: 1em;
+}
+
+.tvor-foto {
+    width: 30%;
+    min-width: 140px;
+}
+
+.tvor-foto img {
+    width: 100%;
+}
+
+.tvor-popis {
+    flex: 1;
+}
+
+footer {
+    background-color: #11161d;
+    color: #ccc;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9rem;
+
+    margin-top: auto;
+}
+
+@media (max-width: 662px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tvor-radek {
+        flex-direction: column;
+    }
+
+    .tvor-foto {
+        width: 100%;
+    }
+
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+}
