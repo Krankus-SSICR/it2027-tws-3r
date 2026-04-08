@@ -1,3 +1,3 @@
 <?php 
-    new mysqli("localhost", "krankus", "databaze456", "it2027");
+    $conn = new mysqli("localhost", "krankus", "databaze456", "it2027");
 ?>

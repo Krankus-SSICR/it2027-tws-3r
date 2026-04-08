@@ -14,6 +14,16 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     //přesun souboru ze serveru do kořenové složky
     move_uploaded_file($_FILES['foto']['tmp_name'], $obrazek_cesta);
+
+    $pridat = $conn->prepare("INSERT INTO aktuality(nadpis, datum, text_aktuality, foto_cesta) VALUES (?, ?, ?, ?)");
+    //připravíme SQL dotaz a určíme, kam chceme uložit data
+    $pridat->bind_param("ssss", $nadpis, $datum, $text, $obrazek_cesta);
+    //pomocí funkce bind_param zabalíme hodnoty do námi určených datových typů
+
+    if ($pridat->execute() === TRUE) {
+        header("Location: index.php?pridano=1");
+        exit();
+    }
 }
 ?>
 <h3>Přidat aktualitu</h3>
